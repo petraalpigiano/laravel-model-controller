@@ -6,11 +6,11 @@
     <div class="container">
         <h1>I miei film su laravel</h1>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach ($movies as $movie)
                 <div class="col">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-body text-center">
                             <h4 class="card-title"><strong>{{ $movie['title'] }}</strong></h4>
                             <h5 class="card-text"><i>{{ $movie['original_title'] }}</i></h5>
                             <p class="card-text">{{ $movie['nationality'] }}</p>
